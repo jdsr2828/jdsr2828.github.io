@@ -20,22 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="各位好，这是我的第三篇博客，在这篇博客中我将讨论一些和算法竞赛有关的技巧以及刷题指南。 目前主流的算法竞赛中，大概考察的内容有搜索，字符串有关算法，数论，组合数学，动态规划，数据结构，图论，计算几何以及少许的构造和预处理编译的有关技巧，其中数论和组合数学这两部分和小初高数学奥赛中的内容基本重合，各位可以查看数学奥林匹克竞赛小蓝书，其中数论中我在上一篇博客中提到的三本书中提到的内容是重中之重，具体难">
+  <meta name="description" content="​	明天要打icpc了，突然想起来这玩意儿咕了好久了，先说点题外话，这两个月经历了太多的事，首先把自己的右臂桡骨弄折了(没折多少，一个月后就康复了)，我觉得在算法竞赛中的两个部分分别能和微观经济学和宏观经济学对应起来，分别是最优化（可能比较广）和群论，大家可以想一下是不是这个道理，因为宏观经济学是比较强调经济周期的，而微观经济学则是对一些经济实体的局部比较感兴趣，大家想一想是不是这样（向大家推荐一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="csy">
-<meta property="og:url" content="http://example.com/2024/10/15/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E6%96%87/index.html">
+<meta property="og:url" content="http://example.com/2024/10/15/%E7%AC%AC4%E7%AF%87%E5%8D%9A%E6%96%87/index.html">
 <meta property="og:site_name" content="csy">
-<meta property="og:description" content="各位好，这是我的第三篇博客，在这篇博客中我将讨论一些和算法竞赛有关的技巧以及刷题指南。 目前主流的算法竞赛中，大概考察的内容有搜索，字符串有关算法，数论，组合数学，动态规划，数据结构，图论，计算几何以及少许的构造和预处理编译的有关技巧，其中数论和组合数学这两部分和小初高数学奥赛中的内容基本重合，各位可以查看数学奥林匹克竞赛小蓝书，其中数论中我在上一篇博客中提到的三本书中提到的内容是重中之重，具体难">
+<meta property="og:description" content="​	明天要打icpc了，突然想起来这玩意儿咕了好久了，先说点题外话，这两个月经历了太多的事，首先把自己的右臂桡骨弄折了(没折多少，一个月后就康复了)，我觉得在算法竞赛中的两个部分分别能和微观经济学和宏观经济学对应起来，分别是最优化（可能比较广）和群论，大家可以想一下是不是这个道理，因为宏观经济学是比较强调经济周期的，而微观经济学则是对一些经济实体的局部比较感兴趣，大家想一想是不是这样（向大家推荐一">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/1.png">
-<meta property="og:image" content="http://example.com/images/2.png">
 <meta property="article:published_time" content="2024-10-15T06:12:19.002Z">
-<meta property="article:modified_time" content="2024-10-15T06:12:19.159Z">
+<meta property="article:modified_time" content="2024-12-11T04:02:00.839Z">
 <meta property="article:author" content="csy">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/1.png">
 
-<link rel="canonical" href="http://example.com/2024/10/15/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E6%96%87/">
+<link rel="canonical" href="http://example.com/2024/10/15/%E7%AC%AC4%E7%AF%87%E5%8D%9A%E6%96%87/">
 
 
 <script id="page-configurations">
@@ -153,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/15/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E6%96%87/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/15/%E7%AC%AC4%E7%AF%87%E5%8D%9A%E6%96%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -178,6 +175,13 @@
 
               <time title="创建时间：2024-10-15 14:12:19" itemprop="dateCreated datePublished" datetime="2024-10-15T14:12:19+08:00">2024-10-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-12-11 12:02:00" itemprop="dateModified" datetime="2024-12-11T12:02:00+08:00">2024-12-11</time>
+              </span>
 
           
 
@@ -190,15 +194,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>各位好，这是我的第三篇博客，在这篇博客中我将讨论一些和算法竞赛有关的技巧以及刷题指南。</p>
-<p>目前主流的算法竞赛中，大概考察的内容有搜索，字符串有关算法，数论，组合数学，动态规划，数据结构，图论，计算几何以及少许的构造和预处理编译的有关技巧，其中数论和组合数学这两部分和小初高数学奥赛中的内容基本重合，各位可以查看数学奥林匹克竞赛小蓝书，其中数论中我在上一篇博客中提到的三本书中提到的内容是重中之重，具体难度划分和把握请参考《算法竞赛》（清华大学出版社）的前言部分。图论也是基本重合，但是得多加上一点计算机领域的专门术语（具体可以看信奥一本通（入门）、另外两本（进阶）的相关内容），可以参考黑皮书《算法导论》以及一些oiwiki中相关条目下的资料。这三本书中没有提到的有关内容我将放在第四篇博客中进行阐述。计算几何是最难点的地方也是最信息最杂碎的一部分，我们可以暂时将其抛至一旁，当然也可以通过刷一下洛谷上的模版题或者usaco或国外oi标签（国外比较喜欢考察这种问题）的题中的一些题来提高自己的计算几何能力。字符串的内容也相对比较杂，一些涉及到一些比较复杂的推导和论文，最基础的ac自动机就需要很强的码力，因此这部分需要很广和很深的积累。然后动态规划是算法竞赛中的重中之重，你可以通过我之前发过的100题来进行一个基础的入门与框架的搭建。搜索是一个强调思维与编码能力的模块，其套路比较固定，这个模块比较适合锻炼自身对于程序流程的熟悉，作用域的把控能力和对一些语言中的语法糖（即固定模块）的熟练程度。另外的构造和预处理就需要敏锐的察觉题目条件的限制更好的随机应变，这也比较考验你对最优化极值组合问题（极大极小）的体会，积累一些常见组合问题的模型（如兰福德排列问题，见高德纳《计算机程序设计艺术卷4A》）数据结构特别是持久化数据结构是一个比较大的模块，我下一篇博客将详细的讲解。</p>
-<p>然后我将谈论一些和算法竞赛有关的小技巧，首先是刷题，刷题起始可以根据洛谷的题单，当然网上也有一些现成的up主，这里需要大家能多上知乎、b站，csdn多浏览一些有关的文章和视频，当然也要掌握一些固有的模块，模块化思想是一个很重要的东西，当然也要同时培养自身的硬分析能力，多找这些模块中的联系和不同之处。</p>
-<p><img src="/images/1.png" alt="images" title="example1"></p>
-<p><img src="/images/2.png" alt="images" title="example2"></p>
-<p>在洛谷中你可以使用显示算法功能来针对训练，初始可以先随机跳一页遍历一遍找一下感觉。洛谷中存在一些【模版】的这种题，这种题通常不需要较强的分析能力，是一些所有算法题中通用的现成的模版，注意学习一下其中的思想，其实很多前沿的论文中围绕一两个新颖而精妙的技巧展开的。还要注重一些思想上的结合，如李超线段树就是把斜率优化和线段树这两个知识点相结合，树套树就是线段树和其他树的一些结合，这种二阶逻辑（感性认识一下)也时常很重要。</p>
-<p>其次是实战的技巧，</p>
-<p>实战的过程中我们先要对编程环境进行一个合理的配置，首先基本所有使用c++的算法竞赛都可以使用万能头文件#include&lt;bits&#x2F;stdc++.h&gt;，然后在所有情况下都不要随意的更改自己已有的配置，不要过度依赖调试，把重心放置在编程这件事情上，确保程序的尽量少次完成(think twice,code once)。第三点，c++语言中存在一个叫做宏定义的东西，也存在一个叫做stl库的东西，你可以现成的使用其中的一些模块，（需要在开头写上using namespace std；当然这点在modern编程的情况下不常用，因为存在姓名空间污染），由于c++中的stl库意义明确，且函数名生动形象（因为编程竞赛中通常不用考虑modern编程中的一些空指针异常问题），所以acmer通常使用c++来进行编程，但同时会造成大代价就是数据类型的受限，为了弥补这一短板，我们通常把数据类型往大了开，具体就是使用宏定义把int #define成 long long或unsigned long long，这样我们主函数也能用signed关键字作为替代。然后如果要读入想int_128之类的数据类型有一个快读技巧，这个可以网上搜，不过最好不要用和缓冲区有关的，这个不太稳定。 </p>
-<p>下一篇我将讲解一些高级数据结构，预计在10.20之前更新。</p>
+        <p>​	明天要打icpc了，突然想起来这玩意儿咕了好久了，先说点题外话，这两个月经历了太多的事，首先把自己的右臂桡骨弄折了(没折多少，一个月后就康复了)，我觉得在算法竞赛中的两个部分分别能和微观经济学和宏观经济学对应起来，分别是最优化（可能比较广）和群论，大家可以想一下是不是这个道理，因为宏观经济学是比较强调经济周期的，而微观经济学则是对一些经济实体的局部比较感兴趣，大家想一想是不是这样（向大家推荐一下曼昆经济学）。然后言归正传，我们来说一些相对复杂的数据结构以及其学习方法。</p>
+<p>​	首先我们得有一个前提知识叫做核算法，简单的来说这相当于会计学当中的借贷概念（但不会坏账,因为强制要求每一时刻信用为非负值，即当前所有信用大于未来可能发生的减值），信用相当于会计中的计提概念，它并没有发生但会在未来发生一个信用的衰减，譬如想象一个栈的结构（如果不知道这个的可以想像这是一个filo的结构），然后我们把它的插入操作和弹出（或弹出多个）的操作都认为是1,那他插入后所增加的信用也是1，总摊还代价是2（为未来弹出储备信用）,而不管如何弹出都只需要支付之前累计的信用值即摊还代价为0（只需要支付原有的信用）若总操作数为n，则总的摊还复杂度（信用+实际代价）就是O(n)。具体请参照<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/87355970?utm_psn=1844859798266441728%EF%BC%8C%E6%B3%A8%E6%84%8F%E8%BF%99%E9%87%8C%E5%AD%98%E5%9C%A8%E5%BC%B9%E5%87%BA%E5%A4%9A%E4%B8%AA%E6%93%8D%E4%BD%9C%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%8D%95%E7%8B%AC%E8%80%83%E8%99%91%E7%9A%84%E8%AF%9D%E4%BC%9A%E5%BE%97%E5%88%B0%E4%B8%80%E4%B8%AA%E4%B8%8D%E4%B8%A5%E6%A0%BC%E7%9A%84%E4%B8%8A%E7%95%8CO%EF%BC%88n%5E2%EF%BC%89,%E8%BF%99%E4%B9%9F%E6%98%AF%E4%B8%BA%E4%BD%95%E8%BF%99%E7%A7%8D%E6%96%B9%E6%B3%95%E5%8F%AB%E5%81%9A%E6%91%8A%E8%BF%98%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%8C%E5%8D%B3%E6%8A%8A%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%A4%A7%E7%9A%84%E6%93%8D%E4%BD%9C%E6%91%8A%E8%BF%98%E5%88%B0%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9B%B8%E5%AF%B9%E8%BE%83%E5%B0%8F%E7%9A%84%E6%93%8D%E4%BD%9C%E4%B8%8A%EF%BC%8C%E8%80%8C%E5%8A%BF%E8%83%BD%E5%88%86%E6%9E%90%E6%B3%95%E5%88%99%E6%8A%8A%E5%8E%9F%E5%85%88%E7%9A%84%E4%BF%A1%E7%94%A8%E5%8F%98%E5%8C%96%E9%87%8F%E6%8D%A2%E6%88%90%E4%BA%86%E7%89%A9%E7%90%86%E4%B8%8A%E5%8A%BF%E8%83%BD%E7%9B%B8%E5%87%8F%E7%9A%84%E5%BD%A2%E5%BC%8F%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E5%83%8F%E7%89%9B%E8%8E%B1%E5%85%AC%E5%BC%8F%E4%B8%80%E6%A0%B7%E6%9C%AB%E5%8A%BF%E8%83%BD%E5%87%8F%E5%88%9D%E5%8A%BF%E8%83%BD%E5%BE%97%E5%88%B0%E6%80%BB%E5%8A%BF%E8%83%BD%EF%BC%88%E4%BF%A1%E7%94%A8%E5%8F%98%E5%8C%96%E9%87%8F%EF%BC%89%E3%80%82">https://zhuanlan.zhihu.com/p/87355970?utm_psn=1844859798266441728，注意这里存在弹出多个操作，如果单独考虑的话会得到一个不严格的上界O（n^2）,这也是为何这种方法叫做摊还复杂度，即把复杂度大的操作摊还到复杂度相对较小的操作上，而势能分析法则把原先的信用变化量换成了物理上势能相减的形式，这样可以像牛莱公式一样末势能减初势能得到总势能（信用变化量）。</a></p>
+<p>下面我们可以来分析一些典型算法的复杂度，这时我们便可以运用势能分析法这个强大的工具</p>
+<p>首先是利用并查集解决的一个问题，这里我参照了<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/x3u368oh">时间复杂度-势能分析浅谈 - 洛谷专栏 (luogu.com.cn)</a>这篇文章，在这里我把他的思想简明扼要的表示出来。我们来看这样一道题，有一个长度为 n的序列，开始全 1，有 m 个操作，每次将一个区间赋为 0，求每次操作后 1 的数量。这道题的正解是大名鼎鼎的线段树，感兴趣的可以去oiwiki上看有关条目。这里使用了基于只要统计全局性质的一个巧妙解法，即使用并查集。首先，我们定义势能函数</p>
+<p> Φ(S)&#x3D;S中不同的集合的个数×α(n)Φ</p>
+<p>S表示维护这个区间的并查集，然后我们在每次进行在线合并的时候，对左边端点使用并查集方法，以此来快速遍历跳到全0的最后一个端点，具体即l&#x3D;getfa(l),merge(l,l+1)（感性认识一下，这里洛谷专栏里面没有考虑while里面可能的多次操作，你可以理解为仅仅发生n次操作后复杂度就必变为1,实际上在大数m面前这个n可以忽略不计，更别提到最后合并完成时直接输出的情况）这两个步骤中的步骤2是的势能函数减少α(n)（这里的α(n)代表阿克曼函数，n代表并进去集合的元素个数，他的值取决于两个并查集进行合并时单个节点合并的复杂度期望，一般是个&lt;5的常数），刚好步骤1的开销，因此即使到最后合并完最劣复杂度也是O（（m+n）<strong>α</strong>(<strong>n</strong>)）的级别，优于线段树算法的O（mlogn）而此时也意味着算法的结束。因此均摊复杂度是一个典型的上界思想，这个思想也可以推广到启发式搜索（A*,IDA*）这些算法（其实大O本身也是上界的一种表示），都是使得最劣情况最优的一种考量。</p>
+<p>基于这种办法，我们还能把许多看起来具有较高上界复杂度的数据结构降低到较低的上界，从而卡过一些精心设计的数据，究其所应，是由于数据结构本身是具有往返变换的一种结构，进来多少就必然出来多少，不会存在存进来就取不出的情况，也不会不消耗任何的能量而凭空自增（类似于信息熵理论中的拉普拉斯妖），因此这就是人生哲理，种瓜得瓜，种豆得豆，时常给自己一些超越自己能力范围的挑战（fake it until you make it.）</p>
+<p>下一讲想自由征集一家大家的意见，我将在我的博客中设置一个讨论版，我的业务范围很广，基本上所有话题我的聊得来，大家可以畅所欲言，直到有人回复我我再写我的下一篇博客。</p>
 
     </div>
 
@@ -217,7 +220,10 @@
     <a href="/2024/09/30/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="第二篇博客">
       <i class="fa fa-chevron-left"></i> 第二篇博客
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2024/12/11/%E7%AC%AC3%E7%AF%87%E5%8D%9A%E6%96%87/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -289,7 +295,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
